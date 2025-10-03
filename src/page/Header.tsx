@@ -46,7 +46,7 @@ const Header = () => {
 
       {/* Mobile menu (overlay) */}
       {isOpen && (
-        <div className="absolute top-[70px] left-0 w-full bg-background flex flex-col items-center gap-4 py-6 shadow-md md:hidden">
+        <div className="absolute top-[70px] left-0 w-full bg-one flex flex-col items-center gap-4 py-6 shadow-md md:hidden">
           {menuItems.map(({ to, label }) => (
             <Link
               key={to}
