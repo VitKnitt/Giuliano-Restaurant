@@ -9,12 +9,13 @@ import restaurant2 from '../../img/restaurant/restaurant2.png';
 
 export function GallerySection() {
   return (
-    <section className="bg-[url('/backGround/menuUp.svg')] bg-cover pt-[100px]" id="Galerie">
+    <section className="bg-[url('/backGround/menuUp.svg')] bg-cover pt-[100px] pr-4" id="Galerie">
       <div className="grid gap-4 max-w-5xl mx-auto 
                       grid-cols-1 
                       sm:grid-cols-2 
                       md:grid-cols-3 
-                      auto-rows-min">
+                      auto-rows-min
+                      ">
         {/* 1. řádek */}
         <img src={pizza5} alt="pizza" className="rounded-xl object-cover w-full" />
         <img src={restaurant2} alt="pizza" className="rounded-xl object-cover w-full" />
