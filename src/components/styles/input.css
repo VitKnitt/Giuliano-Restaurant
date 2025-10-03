@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  button {
+    @apply px-4 py-2 bg-three text-six rounded-lg shadow-md transition;
+  }
+
+  button:hover {
+    @apply bg-two text-seven;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-six mb-4;
+  }
+  h2 {
+    @apply text-3xl font-semibold text-six mb-3;
+  }
+  h3 {
+    @apply text-2xl font-medium text-six mb-2;
+  }
+
+  p {
+    @apply text-base leading-relaxed text-six mb-4;
+  }
+
+  label {
+    @apply block text-sm font-medium text-six;
+  }
+
+  ul {
+    @apply list-disc list-inside mb-4 text-six;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  input, textarea {
+    @apply w-full px-4 py-2 border border-two rounded-lg shadow-sm 
+           focus:outline-none focus:ring-2 focus:ring-three focus:border-three
+           transition;
+  }
+
+  textarea {
+    @apply min-h-[120px] resize-y;
+  }
+
+  form {
+    @apply mx-auto max-w-lg space-y-4 rounded-2xl bg-white p-6 shadow-md;
+  }
+}
+
+@layer utilities {
+  .blueBorder { @apply border-2 border-blue-500; }
+}
