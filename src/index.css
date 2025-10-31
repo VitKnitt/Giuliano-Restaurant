@@ -55,3 +55,35 @@
 @layer utilities {
   .blueBorder { @apply border-2 border-blue-500; }
 }
+
+/* Základní bloky */
+.ce-block,
+.ce-block__content,
+.ce-paragraph,
+.ce-header {
+  color: #000 !important;
+}
+
+/* Unordered list */
+.cdx-list.cdx-list-unordered,
+.cdx-list.cdx-list-unordered li,
+.cdx-list.cdx-list-unordered .cdx-list__item,
+.cdx-list.cdx-list-unordered .cdx-list__item-content {
+  color: #000 !important;
+}
+
+/* Ordered list */
+.cdx-list.cdx-list-ordered,
+.cdx-list.cdx-list-ordered li,
+.cdx-list.cdx-list-ordered .cdx-list__item,
+.cdx-list.cdx-list-ordered .cdx-list__item-content {
+  color: #000 !important;
+}
+
+/* Pro jistotu i odkazy uvnitř listů */
+.cdx-list__item-content a {
+  color: #000 !important;
+}
+
+
+

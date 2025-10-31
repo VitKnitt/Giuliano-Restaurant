@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}", // Kde Tailwind hledá třídy, aby je zahrnul do buildu
@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        one: "#003049",
-        two: "#d62828",
-        three: "#f77f00",
-        four: "#fcbf49",
-        five: "#eae2b7",
+        one: "#000000",
+        two: "#799be4ff",
+        three: "#fca311",
+        four: "#e5e5e5",
+        five: "#ffffff",
         six: "white",
         seven: "black",
       },
@@ -37,9 +37,4 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/forms"), // plugin pro hezčí formuláře <input type="text" className="form-input mt-1 block w-full" />
-    require("@tailwindcss/typography"), // plugin pro lepší typografii (prose třídy) className="prose"
-    require("@tailwindcss/aspect-ratio"), // plugin pro poměr stran obrázků className="aspect-w-16 aspect-h-9"
-  ],
 };
